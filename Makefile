@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-PROGRAM = fractol
+PROGRAM = fractal
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror 
 GFLAGS = -I minilibx -L minilibx -lmlx -framework OpenGL -framework AppKit
@@ -55,7 +55,7 @@ $(PROGRAM): $(OBJ) $(MAIN) $(HEADER)
 	$(CC) $(MAIN) $(OBJ) -L libft -lft $(CFLAGS) $(GFLAGS) -o $(PROGRAM)
 	@echo "$(GREEN)>>DONE!"
 
-fractolclean:
+fractalclean:
 	@rm -f $(OBJ)
 
 clean:
